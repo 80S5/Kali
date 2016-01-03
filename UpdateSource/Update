@@ -1,0 +1,39 @@
+关于Kali 2.0装中文输入法的问题 
+
+首先要添加更新源
+
+deb http://security.kali.org/kali-security/ sana/updates main contrib non-free
+deb-src http://security.kali.org/kali-security/ sana/updates main contrib non-free
+
+
+
+deb http://mirrors.aliyun.com/kali kali main non-free contrib
+deb-src http://mirrors.aliyun.com/kali kali main non-free contrib
+deb http://mirrors.aliyun.com/kali-security kali/updates main contrib non-free
+
+deb http://http.kali.org/kali kali main non-free contribdeb-src 
+deb http://http.kali.org/kali kali main non-free contribdeb 
+deb http://security.kali.org/kali-security kali/updates main contrib non-free
+
+deb http://repo.kali.org/kali kali-bleeding-edge maindeb-src 
+deb http://repo.kali.org/kali kali-bleeding-edge main
+
+deb http://mirrors.ustc.edu.cn/kali kali main non-free contribdeb-src 
+deb http://mirrors.ustc.edu.cn/kali kali main non-free contribdeb 
+deb http://mirrors.ustc.edu.cn/kali-security kali/updates main contrib non-free
+
+deb http://mirrors.aliyun.com/kali kali main non-free contribdeb-src 
+deb http://mirrors.aliyun.com/kali kali main non-free contribdeb 
+deb http://mirrors.aliyun.com/kali-security kali/updates main contrib non-free
+
+leafpad /etc/apt/sources.list  直接复制可以不需要用VIM 打开就是记事本
+
+apt-get update
+
+apt-get upgrade
+
+apt-get install fcitx fcitx-googlepinyin		//谷歌输入法
+
+reboot  										//重启
+
+
